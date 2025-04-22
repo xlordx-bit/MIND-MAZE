@@ -1,0 +1,94 @@
+{
+    "items": {
+        "cat": {
+            "living": true,
+            "holdable": true,
+            "daily_use": false,
+            "indoor": true,
+            "makes_sound": true,
+            "electronic": false,
+            "transportation": false,
+            "furniture": false
+        },
+        "dog": {
+            "living": true,
+            "holdable": true,
+            "daily_use": false,
+            "indoor": true,
+            "makes_sound": true,
+            "electronic": false,
+            "transportation": false,
+            "furniture": false
+        },
+        "book": {
+            "living": false,
+            "holdable": true,
+            "daily_use": true,
+            "indoor": true,
+            "makes_sound": false,
+            "electronic": false,
+            "transportation": false,
+            "furniture": false
+        },
+        "car": {
+            "living": false,
+            "holdable": false,
+            "daily_use": true,
+            "indoor": false,
+            "makes_sound": true,
+            "electronic": true,
+            "transportation": true,
+            "furniture": false
+        },
+        "house": {
+            "living": false,
+            "holdable": false,
+            "daily_use": true,
+            "indoor": true,
+            "makes_sound": false,
+            "electronic": false,
+            "transportation": false,
+            "furniture": false
+        },
+        "tree": {
+            "living": true,
+            "holdable": false,
+            "daily_use": false,
+            "indoor": false,
+            "makes_sound": false,
+            "electronic": false,
+            "transportation": false,
+            "furniture": false
+        },
+        "phone": {
+            "living": false,
+            "holdable": true,
+            "daily_use": true,
+            "indoor": true,
+            "makes_sound": true,
+            "electronic": true,
+            "transportation": false,
+            "furniture": false
+        },
+        "computer": {
+            "living": false,
+            "holdable": true,
+            "daily_use": true,
+            "indoor": true,
+            "makes_sound": true,
+            "electronic": true,
+            "transportation": false,
+            "furniture": false
+        }
+    },
+    "questions": {
+        "Is it a living thing?": "living",
+        "Can you hold it in your hand?": "holdable",
+        "Is it used daily?": "daily_use",
+        "Is it found indoors?": "indoor",
+        "Does it make sounds?": "makes_sound",
+        "Is it electronic?": "electronic",
+        "Is it used for transportation?": "transportation",
+        "Is it a piece of furniture?": "furniture"
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Maze - The Magical Mind Reader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <header>
+            <h1 class="animate__animated animate__pulse animate__infinite">🎩 Mind Maze</h1>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">The Magical Mind Reader</p>
+        </header>
+
+        <div class="game-area">
+            <div id="start-area" class="animate__animated animate__fadeIn">
+                <p class="game-intro">Think of any object, and I'll try to guess it using my magical powers! 🔮</p>
+                <button id="start-game" class="btn animate__animated animate__pulse animate__infinite">✨ Start the Magic</button>
+            </div>
+
+            <div id="question-area" class="animate__animated animate__fadeIn hidden">
+                <div class="question-counter">
+                    <span class="sparkle">✨</span>
+                    Question <span id="current-question-num">1</span> of <span id="total-questions">8</span>
+                    <span class="sparkle">✨</span>
+                </div>
+                <p id="current-question" class="animate__animated animate__fadeInUp"></p>
+                <div class="buttons">
+                    <button id="yes-btn" class="btn animate__animated animate__fadeInLeft">Yes ✅</button>
+                    <button id="no-btn" class="btn animate__animated animate__fadeInRight">No ❌</button>
+                </div>
+            </div>
+
+            <div id="result-area" class="hidden">
+                <div class="crystal-ball">🔮</div>
+                <div class="guess-container">
+                    <p class="guess-intro animate__animated animate__fadeIn animate__delay-1s">I believe you're thinking of...</p>
+                    <h2 id="final-guess" class="animate__animated animate__fadeIn animate__delay-2s"></h2>
+                    <div class="result-buttons">
+                        <button id="retry-game" class="btn animate__animated animate__bounceIn animate__delay-3s">🎯 Try Again</button>
+                        <button id="play-again" class="btn animate__animated animate__bounceIn animate__delay-3s">✨ New Game</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="learning-area" class="hidden animate__animated animate__fadeInUp">
+                <p>🤔 Hmm... My crystal ball is cloudy! What were you thinking of?</p>
+                <div class="input-group">
+                    <input type="text" id="new-item-input" placeholder="✍️ Enter the item name" class="animate__animated animate__fadeIn">
+                    <button id="teach-btn" class="btn animate__animated animate__fadeIn animate__delay-1s">🎓 Teach Me</button>
+                </div>
+                <button id="skip-learning" class="btn animate__animated animate__fadeIn animate__delay-1s">⏭️ Skip</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
